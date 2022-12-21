@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "This is a little Vue library for detecting is user device mobile or tablet or desktop.",
   "private": false,
+  "repository": "https://github.com/iejobs/vue-is-mobile",
   "author": "iejobs",
   "license": "MIT",
   "main": "src/index.js",
