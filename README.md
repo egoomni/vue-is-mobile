@@ -1,24 +1,46 @@
 # vue-is-mobile
+This is a little Vue library for detecting is user device mobile or tablet or desktop.
 
-## Project setup
-```
-yarn install
-```
+## Installation
 
-### Compiles and hot-reloads for development
-```
-yarn serve
+#### npm
+```bash
+npm i vue-is-mobile
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
+#### yarn
+```bash
+yarn add vue-is-mobile
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Usage
+
+#### Installation
+```vue
+import VueIsMobile from "@iejobs/vue-is-mobile"
+
+Vue.use(VueIsMobile)
+```
+
+#### Usage in component
+```vue
+<template>
+  <div id="app">
+    <div v-if="$isMobile">This is mobile device, but not tablet</div>
+    <div v-if="$isMobileOrTablet">This is mobile or tablet device </div>
+  </div>
+</template>
+
+<script>
+export default {
+  mounted() {
+    console.log(this.$isMobile)
+    console.log(this.$isMobileOrTablet)
+  }
+};
+</script>
+```
+
+## License
+
+This project is licensed under the terms of the MIT license
