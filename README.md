@@ -17,7 +17,7 @@ yarn add vue-is-mobile
 
 #### Installation
 ```vue
-import VueIsMobile from "@iejobs/vue-is-mobile"
+import VueIsMobile from "vue-is-mobile"
 
 Vue.use(VueIsMobile)
 ```
