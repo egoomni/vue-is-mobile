@@ -26,8 +26,8 @@ Vue.use(VueIsMobile)
 ```vue
 <template>
   <div id="app">
-    <div v-if="$isMobile">This is mobile device, but not tablet</div>
-    <div v-if="$isMobileOrTablet">This is mobile or tablet device </div>
+    <div v-if="$isMobile">This is a mobile device, but not tablet</div>
+    <div v-if="$isMobileOrTablet">This is a mobile or tablet device</div>
   </div>
 </template>
 
